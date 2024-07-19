@@ -1,0 +1,29 @@
+nav > p{
+    display: flex;
+    align-self: baseline;
+    justify-content: end;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+div img{
+    width: 15vh;
+}
+
+a{
+    font-size: medium;
+    text-decoration: none;
+    color: inherit;
+}
