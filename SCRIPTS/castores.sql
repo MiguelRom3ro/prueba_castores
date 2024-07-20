@@ -5,7 +5,7 @@ USE `castores`;
 -- Table `castores`.`roles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `roles` (
-                                       `idRol` INT(2) NOT NULL AUTO_INCREMENT,
+    `idRol` INT(2) NOT NULL AUTO_INCREMENT,
     `rol` VARCHAR(45) NOT NULL,
     PRIMARY KEY (`idRol`)
     ) ENGINE = InnoDB;
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
 -- Table `castores`.`usuarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `usuarios` (
-                                          `idUsuario` INT(6) NOT NULL AUTO_INCREMENT,
+    `idUsuario` INT(6) NOT NULL AUTO_INCREMENT,
     `nombre` VARCHAR(100) NOT NULL,
     `correo` VARCHAR(50) NOT NULL,
     `contrasena` VARCHAR(255) NOT NULL,
@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Table `castores`.`productos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `productos` (
-                                           `idProducto` INT NOT NULL AUTO_INCREMENT,
-                                           `nombre` VARCHAR(50) NOT NULL,
+    `idProducto` INT NOT NULL AUTO_INCREMENT,
+    `nombre` VARCHAR(50) NOT NULL,
     `cantidad` INT NOT NULL,
     `estatus` INT(2) NOT NULL,
     PRIMARY KEY (`idProducto`)
@@ -44,10 +44,10 @@ CREATE TABLE IF NOT EXISTS `productos` (
 -- Table `castores`.`historial`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `historial` (
-                                           `idMovimiento` INT NOT NULL AUTO_INCREMENT,
-                                           `idProducto` INT NOT NULL,
-                                           `idUsuario` INT NOT NULL,
-                                           `movimiento` VARCHAR(20) NOT NULL,
+    `idMovimiento` INT NOT NULL AUTO_INCREMENT,
+    `idProducto` INT NOT NULL,
+    `idUsuario` INT NOT NULL,
+    `movimiento` VARCHAR(20) NOT NULL,
     `cantidad` INT NOT NULL,
     `dateTim` DATETIME NOT NULL,
     PRIMARY KEY (`idMovimiento`),
