@@ -5,8 +5,8 @@ public class Historial {
     int idMovimiento;
     int idProducto;
     int idUsuario;
-    int nombreUser;
-    int nombreProducto;
+    String nombreUser;
+    String nombreProducto;
     String movimiento;
     int cantidad;
     String dateTim;
@@ -63,18 +63,18 @@ public class Historial {
     }
 
     public String getNombreUser() {
-        return dateTim;
+        return nombreUser;
     }
 
     public void setNombreUser(String nombreUser) {
-        this.dateTim = dateTim;
+        this.nombreUser= nombreUser;
     }
 
     public String getNombreProducto() {
-        return dateTim;
+        return nombreProducto;
     }
 
     public void setNombreProducto(String nombreProducto) {
-        this.dateTim = dateTim;
+        this.nombreProducto = nombreProducto;
     }
 }
