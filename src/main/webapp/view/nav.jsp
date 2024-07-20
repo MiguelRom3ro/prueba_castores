@@ -35,6 +35,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/UsuarioController-Servlet?accion=logout">Cerrar Sesión</a>
                 </li>
+                <li class="nav-item inactive">
+                    <span class="nav-link text-white"><%= usuario.getNombre() %>: <%= usuario.getRol().getRol() %></span>
+                </li>
             </ul>
         </div>
     </div>

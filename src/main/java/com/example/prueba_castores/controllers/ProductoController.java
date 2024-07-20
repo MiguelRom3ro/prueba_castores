@@ -52,6 +52,7 @@ public class ProductoController extends HttpServlet {
                         break;
                     case "listarActivos":
                         listarActivos(request,response);
+                        break;
                     default:
                         addMessageToSession(request, "Tu petición fue inválida.");
                         response.sendRedirect("mensaje.jsp");
